@@ -1,42 +1,79 @@
-<!DOCTYPE html>/
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
-    
+    <title>Odin - Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div = "paragraph"> 
+    <div id="container">
+        <div id="side-image">
+            <div id="logo">
+                <img src="Images/odin-lined.png" alt="Odin logo">
+                <h1>Qirall</h1>
+            </div>
 
-        <p>welcome to our registration page <br> Please fill out this form with the required information</p>
-    </div>
+            <p>Photo by Haly West on Unsplash</p>
+        </div>
 
-    <div = "info"> 
-        <label for="first_name">First Name</label>
-        <input type="text" id="first_name" placeholder="Enter your name..."> 
-       
-        <label for="last_name">Last Name</label>
-        <input type="text" id="last_name" placeholder="Enter your last name..."> 
+        <div id="content">
+            <div class="head-text">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! <br> Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
 
-        <label for="user_email">Email</label>
-        <input type="email" id="user_email" name="user_email" placeholder="you@example.com">
+            <form action="#">
+                <h2>Let's do this!</h2>
+            <div>
+                <div class = "first_name">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="Enter your name..."> 
+                   
+                </div>
+                <div class = "last_name">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Enter your last name..."> 
+                </div>
+            </div>
 
-        <label for="Phone_number">Phone number</label>
-       <input type="number" id="Phone_number" name="Phone_number" placeholder="+27..">
-
-       <label for="user_password">Password:</label>
+            <div>
+                <div class  = "phone">
+                    <label for="Phone_number">Phone number</label>
+                    <input type="number" id="Phone_number" name="Phone_number" placeholder="+27..">
+                </div>
+                <div class = "email">
+                    <label for="user_email">Email</label>
+                    <input type="email" id="user_email" name="user_email" placeholder="you@example.com">
+                </div>
+            </div>
+            
+            <div>
+                <div class = "password">
+                    <label for="user_password">Password:</label>
      <input type="password" id="user_password" name="password" placeholder="Enter Password...">
 
-     <label for="user_password">Confirm Password:</label>
-     <input type="password" id="user_password" name="password" placeholder="Confirm Password...">
+                </div>
+                <div class = "Confirm">
+                    <label for="confirm_password">Confirm Password:</label>
+     <input type="password" id="confirm_password" name="password" placeholder="Confirm Password...">
+                </div>
+            </div>
 
+
+
+        </form>
+
+        <div class="button">
+            <button>Create Account</button>
+
+            <p>Already have an Account ? <span>Log in</span></p>
+
+        </div>
     </div>
-
-    <div = "button"> /
-
-        <p>Sign up fom, Please fill in the fields belo</p>
-    </div>
+</div>
+    
     
 </body>
 </html>
